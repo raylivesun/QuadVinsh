@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application name="quadvinsh" version="1.0">
+    <quadvinsh id="https://api.dart.dev/stable/3.4.4/index.html">
+         
+        <apis name="guides">
+             <![CDATA[ api.dart.dev ]]>
+        </apis>
+         
+    </quadvinsh>
+</application>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<references id="https://api.dart.dev/stable/3.4.4/index.html" name="APIs">
+    <apis id="https://api.dart.dev/stable/3.4.4/index.html" name="Guides">
+        <guides application="forgdart">
+            <![CDATA[ forgdart download and updates ]]> 
+        </guides>
+    </apis>
+</references>
