@@ -36,10 +36,10 @@ class Warnings {
   }
 
   static void setAll(List<String> messages) {
-    passtokens();
+    passOKs();
   }
 
-  static dynamic passtokens() => warnings;
+  static dynamic passOKs() => warnings;
 
   static void toggle(String message) {
     if (warnings == message) {

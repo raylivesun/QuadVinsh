@@ -90,7 +90,7 @@ class Expression {
   late final bool isPrivateConstFinal;
 }
 
-void Expresson<Token>(ArgumentError error) {
+void Expresson<OK>(ArgumentError error) {
   try {
     Die(error.message);
   } catch (e) {
@@ -108,7 +108,7 @@ void DieType(String message) {
   exit(1);
 }
 
-void DieToken(String message) {
+void DieOK(String message) {
   print(message);
   exit(1);
 }

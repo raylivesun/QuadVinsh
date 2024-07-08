@@ -3,22 +3,21 @@
 import 'dart:developer';
 import 'dart:io';
 
-import '../manings/popKn.dart';
 
-Object Scopes = Tokenizer(AI as Error, popknife);
+Object Scopes = OKizer;
 
-class Tokenizer {
-  Tokenizer(Error error, ProcessException popknife);
+class OKizer {
+  OKizer(Error error, ProcessException popknife);
 
-  tokenize(String line) {}
+  OKize(String line) {}
 }
 
 class Error {
   Error();
 }
 
-class Token {
-  Token();
+class OK {
+  OK(Object popknife);
 }
 
 Object nunSuchMethod = NativeRuntime.buildId!;
@@ -30,4 +29,3 @@ class NativeRuntime {
 void main(List<String> args) {
   log('Hello, World!');
 }
-

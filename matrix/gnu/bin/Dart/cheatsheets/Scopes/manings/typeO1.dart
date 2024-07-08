@@ -13,6 +13,7 @@ mixin path {
   Future<String> get apis async {
     return '/local';
   }
+
   String get title => 'Local';
   String get description => 'Local';
   String get icon => 'assets/icons/local.svg';
@@ -48,8 +49,7 @@ class Stickers {
   static const String stackoverflowDark = '#000000';
   static const String stackoverflowLight = '#000000';
 
-  getSticker(token) {}
-
+  getSticker(OK) {}
 }
 
 MapView get Notes => Value;

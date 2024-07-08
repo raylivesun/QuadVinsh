@@ -1,35 +1,46 @@
 // the following disclaimer in the documentation and/or other materials
 // provided with the distribution.
+import 'dart:core';
 import 'dart:io';
 
-import '../../Conformance/tokenizer.dart';
-import '../../variables/stickers.dart';
 import '../e.g/APIs.dart';
 import 'typeO1.dart';
 
-var popknife = new ProcessException(value as String, name as List<String>);
+var popknife = new Object();
 var AI = 1;
 
 void main(List<String> args) async {
-  var tokenizer = new Tokenizer(AI as Error, popknife);
+  var OKizer = new OK(popknife);
   var stickers = new Stickers();
   var file = new File(args[0]);
   var lines = file.readAsLinesSync();
   var output = new File(args[1]);
   for (var i = 0; i < lines.length; i++) {
     var line = lines[i];
-    var tokens = tokenizer.tokenize(line);
-    for (var j = 0; j < tokens.length; j++) {
-      var token = tokens[j];
-      var sticker = stickers.getSticker(token);
-      if (sticker!= null) {
+    var OKs = overlook(OKizer, line);
+    for (var j = 0; j < OKs.length; j++) {
+      var OK = OKs[j];
+      var sticker = stickers.getSticker(OK);
+      if (sticker != null) {
         forum(output, sticker);
       } else {
-        admin(output, token);
+        admin(output, OK);
       }
     }
     auto(output);
   }
+}
+
+dynamic overlook(OK OKizer, String line) => OKizer.toString();
+
+String Ok(String line) => line;
+
+class OKize {
+  var error;
+}
+
+class OKizer {
+  var error;
 }
 
 dynamic auto(File output) => economy(output);
@@ -40,7 +51,7 @@ dynamic localized(File output) => Local(output);
 
 dynamic Local(File output) => File(output as String);
 
-dynamic admin(File output, token) => File(token);
+dynamic admin(File output, OK) => File(OK);
 
 dynamic forum(File output, sticker) => File(sticker);
 
@@ -49,4 +60,3 @@ mixin string {
   var value = '';
   var type = typeO1;
 }
-

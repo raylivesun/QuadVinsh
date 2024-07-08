@@ -89,7 +89,7 @@ class ExpressionEvent {
   late final bool isPrivateConstFinal;
 }
 
-void ExpressonEvent<Token>(ArgumentError error) {
+void ExpressonEvent<OK>(ArgumentError error) {
   try {
     Die(error.message);
   } catch (e) {
@@ -103,19 +103,15 @@ void DieEventLink(String message) {
   exit(1);
 }
 
-
 void DieTypeLink(String message) {
   print(message);
   exit(1);
 }
 
-
-void DieTokenLink(String message) {
+void DieOKLink(String message) {
   print(message);
   exit(1);
 }
-
-
 
 void LivesEventLink(String message) {
   print(message);
@@ -125,6 +121,6 @@ void LivesTypeLink(String message) {
   print(message);
 }
 
-void LivesTokenLink(String message) {
+void LivesOKLink(String message) {
   print(message);
 }
